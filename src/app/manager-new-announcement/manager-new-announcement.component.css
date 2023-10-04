@@ -1,0 +1,93 @@
+.total-container{
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+.body-container{
+  width: 100%;
+  padding-left: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.new-announcement-con{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.new-announcement-text{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.announcement-container{
+  height: 250px;
+  width: 100%;
+  border: 0.5px solid #000;
+  margin-top: 1rem;
+}
+.name-date-con{
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.name-con{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.name{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.input-name{
+  width: 200px;
+  height: 30px;
+  font-size: 0.8rem;
+}
+.date-con{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.date-text{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.input-date{
+  width: 150px;
+  height: 30px;
+  font-size: 0.8rem;
+}
+.btn-con{
+  margin-top: 2rem;
+}
+.publish-btn{
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #005E93;
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.old-announcement-con{
+  margin-top: 1.5rem;
+}
+.old-announcement-text{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.announcements-con{
+  display: flex;
+  gap: 0.8rem;
+  overflow-x: scroll;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+::-webkit-scrollbar{
+  display: none;
+}

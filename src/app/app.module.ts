@@ -11,9 +11,11 @@ import { SidebarIconsComponent } from './sidebar-icons/sidebar-icons.component';
 import { DateTimeFieldComponent } from './date-time-field/date-time-field.component';
 import { CreateMemberComponent } from './create-member/create-member.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { MultiSelectComponent } from './multi-select/multi-select.component';
+import { ManagerAssignedTaskComponent } from './manager-assigned-task/manager-assigned-task.component';
+import { ManagerNewAnnouncementComponent } from './manager-new-announcement/manager-new-announcement.component';
+import { AnnouncementCardComponent } from './announcement-card/announcement-card.component';
 
 
 @NgModule({
@@ -28,7 +30,10 @@ import { MultiSelectComponent } from './multi-select/multi-select.component';
     DateTimeFieldComponent,
     CreateMemberComponent,
     CreateTaskComponent,
-    MultiSelectComponent
+    MultiSelectComponent,
+    ManagerAssignedTaskComponent,
+    ManagerNewAnnouncementComponent,
+    AnnouncementCardComponent
   ],
   imports: [
     BrowserModule,
