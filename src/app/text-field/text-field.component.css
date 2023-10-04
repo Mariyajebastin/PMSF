@@ -1,0 +1,21 @@
+.text-field{
+  width: 100%;
+}
+.top-name{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+}
+.star{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ff0000;
+}
+.input-text{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000;
+  height: 35px;
+  width: 100%;
+  margin-top: 5px;
+}

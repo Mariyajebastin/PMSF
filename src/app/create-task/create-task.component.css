@@ -1,0 +1,70 @@
+.total-container{
+  display: flex;
+  width: 100%;
+}
+.body-container{
+  padding-left: 3.5rem;
+  width: 65%;
+}
+.new-task-con{
+  margin-top: 3rem;
+  display: flex;
+}
+.new-task-text{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000;
+}
+.text-area-con{
+  margin-top: 1rem;
+}
+.text-area{
+
+}
+.t-top-name{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.star{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ff0000;
+}
+.input-text-area{
+  height: 170px;
+  width: 100%;
+  resize: none;
+  margin-top: 5px;
+  font-size: 0.79rem;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.sub-date-con{
+  margin-top: 0.5rem;
+}
+.sub-date{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sub-date-text{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.input-date{
+  font-size: 0.8rem;
+  font-weight: 400;
+  height: 28px;
+  padding-left: 10px;
+}
+.attach-con{
+
+}
+.attach-text{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.input-file{
+
+}

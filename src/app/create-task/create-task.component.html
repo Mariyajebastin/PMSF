@@ -1,0 +1,42 @@
+<div class="total-container">
+  <app-manager-sidebar></app-manager-sidebar>
+  <div class="body-container">
+    <div class="new-task-con">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+        <mask id="mask0_6_1757" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="23">
+          <rect y="0.590698" width="21.8565" height="21.8565" fill="#D9D9D9"/>
+        </mask>
+        <g mask="url(#mask0_6_1757)">
+          <path d="M4.55356 19.7152C4.05268 19.7152 3.62389 19.5368 3.26721 19.1801C2.91052 18.8234 2.73218 18.3947 2.73218 17.8938V14.251C2.73218 13.7501 2.91052 13.3214 3.26721 12.9647C3.62389 12.608 4.05268 12.4296 4.55356 12.4296H17.3032C17.8041 12.4296 18.2329 12.608 18.5896 12.9647C18.9462 13.3214 19.1246 13.7501 19.1246 14.251V17.8938C19.1246 18.3947 18.9462 18.8234 18.5896 19.1801C18.2329 19.5368 17.8041 19.7152 17.3032 19.7152H4.55356ZM4.55356 10.6083C4.05268 10.6083 3.62389 10.4299 3.26721 10.0732C2.91052 9.71655 2.73218 9.28777 2.73218 8.78689V5.14413C2.73218 4.64325 2.91052 4.21447 3.26721 3.85778C3.62389 3.5011 4.05268 3.32275 4.55356 3.32275H17.3032C17.8041 3.32275 18.2329 3.5011 18.5896 3.85778C18.9462 4.21447 19.1246 4.64325 19.1246 5.14413V8.78689C19.1246 9.28777 18.9462 9.71655 18.5896 10.0732C18.2329 10.4299 17.8041 10.6083 17.3032 10.6083H4.55356ZM17.3032 5.14413H4.55356V8.78689H17.3032V5.14413Z" fill="black"/>
+        </g>
+      </svg>
+      <span class="new-task-text">New Task</span>
+    </div>
+    <div class="text-area-con">
+      <div class="text-area">
+        <span class="t-top-name">Task Brief</span>
+        <span class="star">*</span>
+        <textarea rows="10" cols="10" class="input-text-area"></textarea>
+      </div>
+    </div>
+<!--    <div class="multiselect-dropdown-con">-->
+<!--      <div class="dropdown-one">-->
+<!--        <span class="created-by">Created by</span>-->
+<!--        <div class="dropdown-con">-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <div class="sub-date-con">
+      <div class="sub-date">
+        <span class="sub-date-text">Submit Date</span>
+        <input class="input-date" type="date">
+      </div>
+      <div class="attach-con">
+        <span class="attach-text">Attach</span>
+        <input class="input-file" type="file">
+      </div>
+    </div>
+  </div>
+  <app-date-time-field></app-date-time-field>
+  <app-sidebar-icons></app-sidebar-icons>
+</div>
