@@ -20,6 +20,13 @@ import { ManagerEmployeesComponent } from './manager-employees/manager-employees
 import { ManagerChatComponent } from './manager-chat/manager-chat.component';
 import { ManagerSideIconsComponent } from './manager-side-icons/manager-side-icons.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { EmployeeSidebarComponent } from './employee-sidebar/employee-sidebar.component';
+import { EmployeeTaskCardComponent } from './employee-task-card/employee-task-card.component';
+import { EmployeeTaskComponent } from './employee-task/employee-task.component';
+import { EmployeeSidebarIconsComponent } from './employee-sidebar-icons/employee-sidebar-icons.component';
+import { EmployeeAnnouncementComponent } from './employee-announcement/employee-announcement.component';
+import { EmployeeChatComponent } from './employee-chat/employee-chat.component';
+import { EmployeeSidebarIconComponent } from './employee-sidebar-icon/employee-sidebar-icon.component';
 
 
 @NgModule({
@@ -41,7 +48,14 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
     ManagerEmployeesComponent,
     ManagerChatComponent,
     ManagerSideIconsComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    EmployeeSidebarComponent,
+    EmployeeTaskCardComponent,
+    EmployeeTaskComponent,
+    EmployeeSidebarIconsComponent,
+    EmployeeAnnouncementComponent,
+    EmployeeChatComponent,
+    EmployeeSidebarIconComponent
   ],
   imports: [
     BrowserModule,
