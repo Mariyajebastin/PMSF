@@ -16,6 +16,10 @@ import { MultiSelectComponent } from './multi-select/multi-select.component';
 import { ManagerAssignedTaskComponent } from './manager-assigned-task/manager-assigned-task.component';
 import { ManagerNewAnnouncementComponent } from './manager-new-announcement/manager-new-announcement.component';
 import { AnnouncementCardComponent } from './announcement-card/announcement-card.component';
+import { ManagerEmployeesComponent } from './manager-employees/manager-employees.component';
+import { ManagerChatComponent } from './manager-chat/manager-chat.component';
+import { ManagerSideIconsComponent } from './manager-side-icons/manager-side-icons.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 
 @NgModule({
@@ -33,7 +37,11 @@ import { AnnouncementCardComponent } from './announcement-card/announcement-card
     MultiSelectComponent,
     ManagerAssignedTaskComponent,
     ManagerNewAnnouncementComponent,
-    AnnouncementCardComponent
+    AnnouncementCardComponent,
+    ManagerEmployeesComponent,
+    ManagerChatComponent,
+    ManagerSideIconsComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
