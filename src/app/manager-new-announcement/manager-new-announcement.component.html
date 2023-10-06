@@ -1,0 +1,42 @@
+<div class="total-container">
+  <app-manager-sidebar></app-manager-sidebar>
+  <div class="body-container">
+    <div class="new-announcement-con">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+        <mask id="mask0_15_345" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="23">
+          <rect y="0.590698" width="21.8565" height="21.8565" fill="#D9D9D9"/>
+        </mask>
+        <g mask="url(#mask0_15_345)">
+          <path d="M4.5538 19.7152C4.05292 19.7152 3.62414 19.5368 3.26745 19.1801C2.91077 18.8234 2.73242 18.3947 2.73242 17.8938V14.251C2.73242 13.7501 2.91077 13.3214 3.26745 12.9647C3.62414 12.608 4.05292 12.4296 4.5538 12.4296H17.3034C17.8043 12.4296 18.2331 12.608 18.5898 12.9647C18.9465 13.3214 19.1248 13.7501 19.1248 14.251V17.8938C19.1248 18.3947 18.9465 18.8234 18.5898 19.1801C18.2331 19.5368 17.8043 19.7152 17.3034 19.7152H4.5538ZM4.5538 10.6083C4.05292 10.6083 3.62414 10.4299 3.26745 10.0732C2.91077 9.71655 2.73242 9.28777 2.73242 8.78689V5.14413C2.73242 4.64325 2.91077 4.21447 3.26745 3.85778C3.62414 3.5011 4.05292 3.32275 4.5538 3.32275H17.3034C17.8043 3.32275 18.2331 3.5011 18.5898 3.85778C18.9465 4.21447 19.1248 4.64325 19.1248 5.14413V8.78689C19.1248 9.28777 18.9465 9.71655 18.5898 10.0732C18.2331 10.4299 17.8043 10.6083 17.3034 10.6083H4.5538ZM17.3034 5.14413H4.5538V8.78689H17.3034V5.14413Z" fill="black"/>
+        </g>
+      </svg>
+      <span class="new-announcement-text">New Announcement</span>
+    </div>
+    <div class="announcement-container"></div>
+    <div class="name-date-con">
+      <div class="name-con">
+        <span class="name">Name</span>
+        <input class="input-name" type="text">
+      </div>
+      <div class="date-con">
+        <span class="date-text">Date</span>
+        <input class="input-date" type="text">
+      </div>
+    </div>
+    <div class="btn-con">
+      <input class="publish-btn" type="button" value="Publish">
+    </div>
+    <div class="old-announcement-con">
+      <div class="old-announcement-text-con">
+        <div class="old-announcement-text">Old Announcements</div>
+      </div>
+      <div class="announcements-con">
+        <app-announcement-card></app-announcement-card>
+        <app-announcement-card></app-announcement-card>
+        <app-announcement-card></app-announcement-card>
+      </div>
+    </div>
+  </div>
+  <app-date-time-field></app-date-time-field>
+  <app-sidebar-icons></app-sidebar-icons>
+</div>

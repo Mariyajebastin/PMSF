@@ -1,0 +1,467 @@
+<div class="total-container">
+  <app-manager-sidebar></app-manager-sidebar>
+  <div class="body-container">
+    <div class="all-task-con">
+      <div class="all-task">
+        <span class="all-task-text">All Task</span>
+      </div>
+      <div class="fil-sort-search-con">
+        <a href="#">
+          <span class="filter-text">Filter</span>
+        </a>
+        <a href="#">
+          <span class="sort-text">Sort</span>
+        </a>
+        <div class="search-con">
+          <input class="input-search" type="text" placeholder="Search Task">
+          <div class="search-icon-con">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <mask id="mask0_40_2166" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_40_2166)">
+                <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="#6B6B6B"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <th>Assigned Task</th>
+        <th>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <mask id="mask0_40_2169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_40_2169)">
+              <path d="M6.50016 11.9167C5.75988 11.9167 5.06023 11.7745 4.4012 11.4901C3.74218 11.2058 3.16666 10.8176 2.67464 10.3256C2.18263 9.83355 1.79443 9.25803 1.51006 8.599C1.22568 7.93997 1.0835 7.24032 1.0835 6.50004C1.0835 5.75073 1.22568 5.04883 1.51006 4.39431C1.79443 3.7398 2.18263 3.16653 2.67464 2.67452C3.16666 2.18251 3.74218 1.79431 4.4012 1.50994C5.06023 1.22556 5.75988 1.08337 6.50016 1.08337C6.65363 1.08337 6.78228 1.13528 6.8861 1.2391C6.98992 1.34292 7.04183 1.47157 7.04183 1.62504C7.04183 1.77851 6.98992 1.90716 6.8861 2.01098C6.78228 2.1148 6.65363 2.16671 6.50016 2.16671C5.29947 2.16671 4.27707 2.58876 3.43298 3.43285C2.58888 4.27695 2.16683 5.29935 2.16683 6.50004C2.16683 7.70073 2.58888 8.72313 3.43298 9.56723C4.27707 10.4113 5.29947 10.8334 6.50016 10.8334C7.70086 10.8334 8.72325 10.4113 9.56735 9.56723C10.4114 8.72313 10.8335 7.70073 10.8335 6.50004C10.8335 6.34657 10.8854 6.21792 10.9892 6.1141C11.093 6.01028 11.2217 5.95837 11.3752 5.95837C11.5286 5.95837 11.6573 6.01028 11.7611 6.1141C11.8649 6.21792 11.9168 6.34657 11.9168 6.50004C11.9168 7.24032 11.7746 7.93997 11.4903 8.599C11.2059 9.25803 10.8177 9.83355 10.3257 10.3256C9.83367 10.8176 9.26041 11.2058 8.60589 11.4901C7.95138 11.7745 7.24947 11.9167 6.50016 11.9167Z" fill="#6B6B6B"/>
+            </g>
+          </svg>
+          Task Status
+        </th>
+        <th>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <mask id="mask0_40_2172" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_40_2172)">
+              <path d="M5.41683 6.50002C4.821 6.50002 4.31093 6.28787 3.88662 5.86356C3.46232 5.43926 3.25016 4.92919 3.25016 4.33335C3.25016 3.73752 3.46232 3.22745 3.88662 2.80315C4.31093 2.37884 4.821 2.16669 5.41683 2.16669C6.01266 2.16669 6.52273 2.37884 6.94704 2.80315C7.37134 3.22745 7.5835 3.73752 7.5835 4.33335C7.5835 4.92919 7.37134 5.43926 6.94704 5.86356C6.52273 6.28787 6.01266 6.50002 5.41683 6.50002ZM1.0835 10.8334V9.31669C1.0835 9.01877 1.16023 8.73891 1.3137 8.4771C1.46718 8.2153 1.67933 8.01669 1.95016 7.88127C2.41058 7.64655 2.92968 7.44794 3.50745 7.28544C4.08523 7.12294 4.72169 7.04169 5.41683 7.04169H5.60641C5.66058 7.04169 5.71475 7.05071 5.76891 7.06877C5.69669 7.23127 5.63575 7.40054 5.5861 7.57658C5.53645 7.75262 5.49808 7.93544 5.471 8.12502H5.41683C4.77586 8.12502 4.20034 8.20627 3.69027 8.36877C3.1802 8.53127 2.76266 8.69377 2.43766 8.85627C2.35641 8.90141 2.29096 8.9646 2.24131 9.04585C2.19166 9.1271 2.16683 9.21738 2.16683 9.31669V9.75002H5.57933C5.6335 9.9396 5.70572 10.1269 5.796 10.312C5.88627 10.4971 5.98558 10.6709 6.09391 10.8334H1.0835ZM8.66683 11.375L8.50433 10.5625C8.396 10.5174 8.29443 10.47 8.19964 10.4203C8.10485 10.3707 8.0078 10.3097 7.9085 10.2375L7.12308 10.4813L6.58141 9.56044L7.20433 9.01877C7.18627 8.89238 7.17725 8.77502 7.17725 8.66669C7.17725 8.55835 7.18627 8.44099 7.20433 8.3146L6.58141 7.77294L7.12308 6.8521L7.9085 7.09585C8.0078 7.02363 8.10485 6.96269 8.19964 6.91304C8.29443 6.86339 8.396 6.81599 8.50433 6.77085L8.66683 5.95835H9.75016L9.91266 6.77085C10.021 6.81599 10.1226 6.86565 10.2174 6.91981C10.3121 6.97398 10.4092 7.04169 10.5085 7.12294L11.2939 6.8521L11.8356 7.80002L11.2127 8.34169C11.2307 8.45002 11.2397 8.56287 11.2397 8.68023C11.2397 8.79759 11.2307 8.91044 11.2127 9.01877L11.8356 9.56044L11.2939 10.4813L10.5085 10.2375C10.4092 10.3097 10.3121 10.3707 10.2174 10.4203C10.1226 10.47 10.021 10.5174 9.91266 10.5625L9.75016 11.375H8.66683ZM9.2085 9.75002C9.50641 9.75002 9.76145 9.64394 9.9736 9.43179C10.1858 9.21964 10.2918 8.9646 10.2918 8.66669C10.2918 8.36877 10.1858 8.11374 9.9736 7.90158C9.76145 7.68943 9.50641 7.58335 9.2085 7.58335C8.91058 7.58335 8.65555 7.68943 8.44339 7.90158C8.23124 8.11374 8.12516 8.36877 8.12516 8.66669C8.12516 8.9646 8.23124 9.21964 8.44339 9.43179C8.65555 9.64394 8.91058 9.75002 9.2085 9.75002ZM5.41683 5.41669C5.71475 5.41669 5.96978 5.31061 6.18193 5.09846C6.39409 4.8863 6.50016 4.63127 6.50016 4.33335C6.50016 4.03544 6.39409 3.7804 6.18193 3.56825C5.96978 3.3561 5.71475 3.25002 5.41683 3.25002C5.11891 3.25002 4.86388 3.3561 4.65173 3.56825C4.43957 3.7804 4.3335 4.03544 4.3335 4.33335C4.3335 4.63127 4.43957 4.8863 4.65173 5.09846C4.86388 5.31061 5.11891 5.41669 5.41683 5.41669Z" fill="#6B6B6B"/>
+            </g>
+          </svg>
+          Created By
+        </th>
+        <th>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <mask id="mask0_40_2175" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_40_2175)">
+              <path d="M4.33333 7.58331C4.17986 7.58331 4.05122 7.5314 3.9474 7.42758C3.84358 7.32376 3.79167 7.19512 3.79167 7.04165C3.79167 6.88817 3.84358 6.75953 3.9474 6.65571C4.05122 6.55189 4.17986 6.49998 4.33333 6.49998C4.48681 6.49998 4.61545 6.55189 4.71927 6.65571C4.82309 6.75953 4.875 6.88817 4.875 7.04165C4.875 7.19512 4.82309 7.32376 4.71927 7.42758C4.61545 7.5314 4.48681 7.58331 4.33333 7.58331ZM6.5 7.58331C6.34653 7.58331 6.21788 7.5314 6.11406 7.42758C6.01024 7.32376 5.95833 7.19512 5.95833 7.04165C5.95833 6.88817 6.01024 6.75953 6.11406 6.65571C6.21788 6.55189 6.34653 6.49998 6.5 6.49998C6.65347 6.49998 6.78212 6.55189 6.88594 6.65571C6.98976 6.75953 7.04167 6.88817 7.04167 7.04165C7.04167 7.19512 6.98976 7.32376 6.88594 7.42758C6.78212 7.5314 6.65347 7.58331 6.5 7.58331ZM8.66667 7.58331C8.51319 7.58331 8.38455 7.5314 8.28073 7.42758C8.17691 7.32376 8.125 7.19512 8.125 7.04165C8.125 6.88817 8.17691 6.75953 8.28073 6.65571C8.38455 6.55189 8.51319 6.49998 8.66667 6.49998C8.82014 6.49998 8.94879 6.55189 9.0526 6.65571C9.15642 6.75953 9.20833 6.88817 9.20833 7.04165C9.20833 7.19512 9.15642 7.32376 9.0526 7.42758C8.94879 7.5314 8.82014 7.58331 8.66667 7.58331ZM2.70833 11.9166C2.41042 11.9166 2.15538 11.8106 1.94323 11.5984C1.73108 11.3863 1.625 11.1312 1.625 10.8333V3.24998C1.625 2.95206 1.73108 2.69703 1.94323 2.48488C2.15538 2.27272 2.41042 2.16665 2.70833 2.16665H3.25V1.08331H4.33333V2.16665H8.66667V1.08331H9.75V2.16665H10.2917C10.5896 2.16665 10.8446 2.27272 11.0568 2.48488C11.2689 2.69703 11.375 2.95206 11.375 3.24998V10.8333C11.375 11.1312 11.2689 11.3863 11.0568 11.5984C10.8446 11.8106 10.5896 11.9166 10.2917 11.9166H2.70833ZM2.70833 10.8333H10.2917V5.41665H2.70833V10.8333ZM2.70833 4.33331H10.2917V3.24998H2.70833V4.33331Z" fill="#6B6B6B"/>
+            </g>
+          </svg>
+          Due Date
+        </th>
+        <th>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <mask id="mask0_40_2178" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_40_2178)">
+              <path d="M5.93109 9.74998L8.9915 6.68956L8.20609 5.90415L5.91755 8.19269L4.78005 7.05519L4.00817 7.82706L5.93109 9.74998ZM3.24984 11.9166C2.95192 11.9166 2.69689 11.8106 2.48473 11.5984C2.27258 11.3863 2.1665 11.1312 2.1665 10.8333V2.16665C2.1665 1.86873 2.27258 1.61369 2.48473 1.40154C2.69689 1.18939 2.95192 1.08331 3.24984 1.08331H7.58317L10.8332 4.33331V10.8333C10.8332 11.1312 10.7271 11.3863 10.5149 11.5984C10.3028 11.8106 10.0478 11.9166 9.74984 11.9166H3.24984ZM7.0415 4.87498V2.16665H3.24984V10.8333H9.74984V4.87498H7.0415Z" fill="#6B6B6B"/>
+            </g>
+          </svg>
+          Task Brief
+        </th>
+        <th>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <mask id="mask0_40_2181" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_40_2181)">
+              <path d="M10.6573 11.0365L11.0365 10.6573L10.0208 9.64167V8.125H9.47917V9.85833L10.6573 11.0365ZM2.70833 11.375C2.41042 11.375 2.15538 11.2689 1.94323 11.0568C1.73108 10.8446 1.625 10.5896 1.625 10.2917V2.70833C1.625 2.41042 1.73108 2.15538 1.94323 1.94323C2.15538 1.73108 2.41042 1.625 2.70833 1.625H10.2917C10.5896 1.625 10.8446 1.73108 11.0568 1.94323C11.2689 2.15538 11.375 2.41042 11.375 2.70833V6.3375C11.2035 6.25625 11.0274 6.18628 10.8469 6.1276C10.6663 6.06892 10.4812 6.02604 10.2917 5.99896V2.70833H2.70833V10.2917H5.98542C6.0125 10.4903 6.05538 10.6799 6.11406 10.8604C6.17274 11.041 6.24271 11.2125 6.32396 11.375H2.70833ZM2.70833 10.2917V2.70833V5.99896V5.95833V10.2917ZM3.79167 9.20833H5.99896C6.02604 9.01875 6.06892 8.83368 6.1276 8.65312C6.18628 8.47257 6.25174 8.29653 6.32396 8.125H3.79167V9.20833ZM3.79167 7.04167H7.09583C7.38472 6.77083 7.70746 6.54514 8.06406 6.36458C8.42066 6.18403 8.80208 6.06215 9.20833 5.99896V5.95833H3.79167V7.04167ZM3.79167 4.875H9.20833V3.79167H3.79167V4.875ZM9.75 12.4583C9.00069 12.4583 8.36198 12.1943 7.83385 11.6661C7.30573 11.138 7.04167 10.4993 7.04167 9.75C7.04167 9.00069 7.30573 8.36198 7.83385 7.83385C8.36198 7.30573 9.00069 7.04167 9.75 7.04167C10.4993 7.04167 11.138 7.30573 11.6661 7.83385C12.1943 8.36198 12.4583 9.00069 12.4583 9.75C12.4583 10.4993 12.1943 11.138 11.6661 11.6661C11.138 12.1943 10.4993 12.4583 9.75 12.4583Z" fill="#6B6B6B"/>
+            </g>
+          </svg>
+          Priority
+        </th>
+        <th>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <mask id="mask0_40_2360" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+              <rect width="13" height="13" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_40_2360)">
+              <path d="M1.625 11.375V10.2917H10.2917V1.625H11.375V10.2917C11.375 10.5896 11.2689 10.8446 11.0568 11.0568C10.8446 11.2689 10.5896 11.375 10.2917 11.375H1.625ZM8.125 9.20833C7.82708 9.20833 7.57205 9.10226 7.3599 8.8901C7.14774 8.67795 7.04167 8.42292 7.04167 8.125C7.04167 7.82708 7.14774 7.57205 7.3599 7.3599C7.57205 7.14774 7.82708 7.04167 8.125 7.04167C8.42292 7.04167 8.67795 7.14774 8.8901 7.3599C9.10226 7.57205 9.20833 7.82708 9.20833 8.125C9.20833 8.42292 9.10226 8.67795 8.8901 8.8901C8.67795 9.10226 8.42292 9.20833 8.125 9.20833ZM2.70833 6.5V5.41667H4.65833L1.625 2.38333L2.38333 1.625L5.41667 4.65833V2.70833H6.5V6.5H2.70833Z" fill="#6B6B6B"/>
+            </g>
+          </svg>
+          Action
+        </th>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="process-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#005E93"/>
+            </svg>
+            In process
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="not-started-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#FFF"/>
+            </svg>
+            Not started
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Create Web Landing Page</td>
+        <td>
+          <div class="completed-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#25A031"/>
+            </svg>
+            Completed
+          </div>
+        </td>
+        <td>
+          Mani Abraham S
+        </td>
+        <td>
+          02/10/2023
+        </td>
+        <td>It is a long established fact </td>
+        <td>
+          <div class="high-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#F80C0C"/>
+            </svg>
+            High
+          </div>
+        </td>
+        <td>
+          <a class="edit-btn" href="#">Edit</a>
+          <a class="delete-btn" href="#">Delete</a>
+        </td>
+      </tr>
+    </table>
+    <div class="btn-con">
+      <input class="load-more-btn" type="button" value="Load more">
+    </div>
+  </div>
+  <app-date-time-field></app-date-time-field>
+  <app-sidebar-icons></app-sidebar-icons>
+</div>

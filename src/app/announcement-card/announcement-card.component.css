@@ -1,0 +1,31 @@
+.announcement-card-con{
+  width: 300px;
+  height: 160px;
+  background-color: #EAEAEA;
+  padding: 20px;
+  border-radius: 10px;
+}
+.announce-date-con{
+
+}
+.announce-date{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.announce-heading-con{
+  margin-top: 0.5rem;
+}
+.announce-heading{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #005E93;
+}
+.announce-content-con{
+  margin-top: 0.5rem;
+}
+.announce-content{
+  font-size: 0.6rem;
+  font-weight: 400;
+  display: block;
+  line-height: 15px;
+}

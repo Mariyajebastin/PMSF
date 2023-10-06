@@ -1,0 +1,6 @@
+.align-icon-con{
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.4rem;
+}

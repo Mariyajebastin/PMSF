@@ -11,9 +11,22 @@ import { SidebarIconsComponent } from './sidebar-icons/sidebar-icons.component';
 import { DateTimeFieldComponent } from './date-time-field/date-time-field.component';
 import { CreateMemberComponent } from './create-member/create-member.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { MultiSelectComponent } from './multi-select/multi-select.component';
+import { ManagerAssignedTaskComponent } from './manager-assigned-task/manager-assigned-task.component';
+import { ManagerNewAnnouncementComponent } from './manager-new-announcement/manager-new-announcement.component';
+import { AnnouncementCardComponent } from './announcement-card/announcement-card.component';
+import { ManagerEmployeesComponent } from './manager-employees/manager-employees.component';
+import { ManagerChatComponent } from './manager-chat/manager-chat.component';
+import { ManagerSideIconsComponent } from './manager-side-icons/manager-side-icons.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { EmployeeSidebarComponent } from './employee-sidebar/employee-sidebar.component';
+import { EmployeeTaskCardComponent } from './employee-task-card/employee-task-card.component';
+import { EmployeeTaskComponent } from './employee-task/employee-task.component';
+import { EmployeeSidebarIconsComponent } from './employee-sidebar-icons/employee-sidebar-icons.component';
+import { EmployeeAnnouncementComponent } from './employee-announcement/employee-announcement.component';
+import { EmployeeChatComponent } from './employee-chat/employee-chat.component';
+import { EmployeeSidebarIconComponent } from './employee-sidebar-icon/employee-sidebar-icon.component';
 
 
 @NgModule({
@@ -28,7 +41,21 @@ import { MultiSelectComponent } from './multi-select/multi-select.component';
     DateTimeFieldComponent,
     CreateMemberComponent,
     CreateTaskComponent,
-    MultiSelectComponent
+    MultiSelectComponent,
+    ManagerAssignedTaskComponent,
+    ManagerNewAnnouncementComponent,
+    AnnouncementCardComponent,
+    ManagerEmployeesComponent,
+    ManagerChatComponent,
+    ManagerSideIconsComponent,
+    EmployeeLoginComponent,
+    EmployeeSidebarComponent,
+    EmployeeTaskCardComponent,
+    EmployeeTaskComponent,
+    EmployeeSidebarIconsComponent,
+    EmployeeAnnouncementComponent,
+    EmployeeChatComponent,
+    EmployeeSidebarIconComponent
   ],
   imports: [
     BrowserModule,

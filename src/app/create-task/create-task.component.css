@@ -51,6 +51,7 @@
 .sub-date-text{
   font-size: 0.8rem;
   font-weight: 400;
+  width: 75px;
 }
 .input-date{
   font-size: 0.8rem;
@@ -59,12 +60,62 @@
   padding-left: 10px;
 }
 .attach-con{
-
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
 }
 .attach-text{
   font-size: 0.8rem;
   font-weight: 400;
+  width: 75px;
 }
 .input-file{
 
 }
+.file-upload {
+  display: inline-block;
+  position: relative;
+}
+
+.file-input {
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.file-upload-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C9ECFF;
+  color: #005E93;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  width: 80px;
+  height: 30px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.icon {
+  margin-right: 3px;
+}
+.btn-con{
+  margin-top: 2rem;
+}
+.save-btn{
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #005E93;
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+

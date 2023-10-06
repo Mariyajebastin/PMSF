@@ -1,0 +1,88 @@
+.task-card-container{
+  width: 100%;
+  border-radius: 23.496px;
+  border: 0.5px solid #005E93;
+  background: #F6F6F6;
+  padding: 30px 20px;
+  position: relative;
+}
+.task-con{
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #6B6B6B;
+}
+.task{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #6B6B6B;
+}
+.task-second-con{
+
+}
+.task-sts-create-date-con{
+
+}
+.task-align-con{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.task-sts{
+  display: flex;
+  align-items: center;
+  width: 110px;
+}
+.task-sts-qus{
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6B6B6B;
+}
+.task-sts-ans{
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #6B6B6B;
+}
+select:has option[checked]{
+  background-color: #1A93D7;
+}
+.inprocess-option{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #005E93;
+  background-color: #C9ECFF;
+  padding: 4px 8px;
+}
+.input-text-area{
+  width: 100%;
+  height: 130px;
+  resize: none;
+  border-radius: 9.194px;
+  border: 0.306px solid #6B6B6B;
+  background: #FFF;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #6B6B6B;
+  padding: 15px;
+}
+.high-btn{
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #F80C0C;
+  padding: 4px 16px;
+  background-color: #FFE5E5;
+  border-radius: 20px;
+  display: inline;
+}
+.back-btn-con{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+.back-btn{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+
