@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-employee-login',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-login.component.css']
 })
 export class EmployeeLoginComponent {
+  constructor(private router:Router) {
+  }
 
+  doLogin() {
+    this.router.navigate(['/announcement']);
+  }
 }

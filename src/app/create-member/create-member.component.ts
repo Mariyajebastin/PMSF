@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-create-member',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-member.component.css']
 })
 export class CreateMemberComponent {
+  constructor(private router:Router) {
+
+  }
+
 
 }

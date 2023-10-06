@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-manager-login',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ManagerLoginComponent {
 
+  constructor(private router:Router) {
+  }
 
+  doLogin() {
+    this.router.navigate(['/dashboard']);
+  }
 }

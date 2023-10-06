@@ -27,7 +27,31 @@ import { EmployeeSidebarIconsComponent } from './employee-sidebar-icons/employee
 import { EmployeeAnnouncementComponent } from './employee-announcement/employee-announcement.component';
 import { EmployeeChatComponent } from './employee-chat/employee-chat.component';
 import { EmployeeSidebarIconComponent } from './employee-sidebar-icon/employee-sidebar-icon.component';
+import {RouterModule, Routes} from "@angular/router";
+// EmployeeLoginComponent
 
+
+
+const routes: Routes = [
+  // Employee portal
+  { path: 'employee', component: EmployeeLoginComponent },
+  { path: 'announcement', component:EmployeeAnnouncementComponent},
+  { path: 'tasks', component:EmployeeTaskComponent},
+  { path: 'chats', component:EmployeeChatComponent},
+  { path: 'signout', component:EmployeeLoginComponent},
+
+  // Manager portal
+  { path: 'manager', component: ManagerLoginComponent },
+  { path: 'dashboard', component: ManagerDashboardComponent },
+  { path: 'create-member', component: CreateMemberComponent },
+  { path: 'create-task', component: CreateTaskComponent },
+  { path: 'assigned-task', component: ManagerAssignedTaskComponent },
+  { path: 'view-announcement', component:ManagerNewAnnouncementComponent},
+  { path: 'employees', component: ManagerEmployeesComponent },
+  { path: 'do-chat', component: ManagerChatComponent },
+  { path: 'manager-sign-out', component:ManagerLoginComponent}
+
+];
 
 @NgModule({
   declarations: [
@@ -60,7 +84,9 @@ import { EmployeeSidebarIconComponent } from './employee-sidebar-icon/employee-s
   imports: [
     BrowserModule,
     NgSelectModule,
+    RouterModule.forRoot(routes)
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
