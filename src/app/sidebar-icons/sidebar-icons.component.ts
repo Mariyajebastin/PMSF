@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar-icons',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar-icons.component.css']
 })
 export class SidebarIconsComponent {
-
+  @Input () searchBar : any
 }

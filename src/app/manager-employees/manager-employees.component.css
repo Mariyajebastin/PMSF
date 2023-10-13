@@ -2,10 +2,17 @@
   height: 100vh;
   width: 92%;
   display: flex;
+  overflow: hidden;
 }
 .body-container{
   width: 100%;
   padding-left: 25px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 .employee-top-con{
   margin-top: 2rem;
@@ -19,52 +26,10 @@
   font-size: 1.4rem;
   font-weight: 500;
 }
-table{
-  margin-top: 1.5rem;
-  width: 100%;
-  border-collapse: collapse;
-}
-th{
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #005E93;
-  padding: 10px;
-  background-color: #C9ECFF;
-  border: none;
-  text-align: left;
-}
-td{
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #6B6B6B;
-  padding: 10px;
-  border-bottom: 0.5px solid #6B6B6B;
-}
-.active-sts{
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #FFF;
-  background-color: #30B53D;
-  padding: 4px 8px;
-  border-radius: 3px;
-  width: 85px;
-  text-align: center;
-}
-.reason{
-  font-size: 0.65rem;
-  font-weight: 400;
-  color: #6B6B6B;
-  margin-top: 3px;
-}
-.not-active-sts{
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #FFF;
-  background-color: #E75300;
-  padding: 4px 8px;
-  border-radius: 3px;
-  width: 85px;
-  text-align: center;
+.employee-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .btn-con{
   margin-top: 1.5rem;
@@ -83,7 +48,7 @@ td{
   height: 30px;
   width: 85px;
   cursor: pointer;
-  transform: translateX(-4rem);
+  /*transform: translateX(-4rem);*/
 }
 
 

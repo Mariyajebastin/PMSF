@@ -14,9 +14,10 @@
   margin-top: 2rem;
   display: flex;
   align-items: center;
+  gap: 0.3rem;
 }
 .new-announcement-text{
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 .announcement-container{
@@ -78,7 +79,7 @@
   margin-top: 1.5rem;
 }
 .old-announcement-text{
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 .announcements-con{

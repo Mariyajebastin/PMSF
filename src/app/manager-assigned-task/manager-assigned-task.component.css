@@ -18,7 +18,7 @@
 
 }
 .all-task-text{
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 .fil-sort-search-con{
@@ -83,6 +83,10 @@ table{
   border-top: none;
   border-left: none;
   border-right: none;
+}
+td{
+  border-right: none;
+  border-left: none;
 }
 .edit-btn{
   font-size: 0.7rem;
@@ -154,6 +158,6 @@ table{
   height: 30px;
   width: 85px;
   cursor: pointer;
-  transform: translateX(-4rem);
+  /*transform: translateX(-4rem);*/
 }
 

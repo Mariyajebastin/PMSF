@@ -15,9 +15,11 @@
 }
 .create-member svg{
   margin-right: 5px;
+  height: 22px !important;
+  width: 22px !important;
 }
 .create-member-text{
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 .text-field-container{
@@ -25,7 +27,7 @@
   gap: 5rem;
 }
 .text-field-container:nth-child(1){
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
 }
 .text-field-align{
   width: 325px;
@@ -60,7 +62,7 @@
   font-weight: 400;
 }
 .save-btn-con{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .save-btn{
   font-size: 0.85rem;
@@ -69,6 +71,28 @@
   background-color: #005E93;
   display: block;
   width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.create-emp-con{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.create-emp{
+  font-size: 0.83rem;
+  font-weight: 400;
+}
+.create-btn{
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #005E93;
+  display: block;
+  width: 135px;
   height: 30px;
   border: none;
   border-radius: 2px;

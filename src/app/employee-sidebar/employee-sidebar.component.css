@@ -44,15 +44,19 @@ a{
   font-weight: 400;
   color: #FFF;
 }
+.edit-icon{
+  margin-left: 10px;
+}
 .menu-container{
   margin-top: 2.5rem;
 }
 .menu{
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .menu-option{
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #FFF;
 }
@@ -66,11 +70,14 @@ a{
 }
 .menu svg{
   margin-right: 5px;
+  height: 20px !important;
+  width: 20px !important;
 }
 .sign-out-container{
   position: absolute;
   bottom: 20px;
   width: 100%;
+  cursor: pointer;
 }
 .sign-out-container a{
   display: flex;

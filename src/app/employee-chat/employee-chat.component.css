@@ -20,7 +20,7 @@
   margin-right: 5px;
 }
 .chat-text{
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 .chat-full-con{
@@ -30,7 +30,7 @@
   margin-top: 1rem;
 }
 .chat-list-con{
-  padding: 0px 8px 10px;
+  padding: 8px 10px;
   border-radius: 15px;
   border: 0.5px solid #6B6B6B;
   opacity: 0.9;
@@ -39,20 +39,19 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  overflow-x:hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   position: relative;
+}
+.chat-person-scroll-con{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar{
   display: none;
 }
 .online{
-  height: 40px;
-  width: 210px;
-  position: fixed;
-  background-color: #FFF;
-  z-index: 1;
-  padding: 10px;
 }
 .online span{
   font-size: 0.9rem;
@@ -68,10 +67,6 @@ a{
   padding: 2px 10px;
   border-radius: 7px;
   opacity: 0.9;
-}
-.chat-list-person-con:nth-child(2){
-  margin-top: 3rem;
-  background-color: #F2F2F2;
 }
 .chat-list-person-con:hover{
   background-color: #F2F2F2;
@@ -95,7 +90,7 @@ a{
   background-repeat: no-repeat;
 }
 .chat-list-person-name{
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #000;
 }

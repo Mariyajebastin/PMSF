@@ -2,7 +2,7 @@
   <app-manager-sidebar></app-manager-sidebar>
   <div class="body-container">
     <div class="new-task-con">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 23" fill="none">
         <mask id="mask0_6_1757" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="23">
           <rect y="0.590698" width="21.8565" height="21.8565" fill="#D9D9D9"/>
         </mask>
@@ -27,9 +27,18 @@
 <!--      </div>-->
 <!--    </div>-->
     <div class="sub-date-con">
-      <div class="sub-date">
-        <span class="sub-date-text">Submit Date</span>
-        <input class="input-date" type="date">
+      <div class="date-priority">
+        <div class="sub-date">
+          <span class="sub-date-text">Submit Date</span>
+          <input class="input-date" type="date">
+        </div>
+        <div class="priority-con">
+          <span class="priority-text">Priority</span>
+          <select>
+            <option >Select</option>
+            <option class="high-option">High</option>
+          </select>
+        </div>
       </div>
       <div class="attach-con">
         <span class="attach-text">Attach</span>

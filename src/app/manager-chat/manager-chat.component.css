@@ -39,8 +39,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  overflow-x:hidden;
+  overflow: hidden;
+}
+.chat-person-scroll-con{
+  height: 100%;
+  width: 100%;
   overflow-y: scroll;
+  overflow-x: hidden
 }
 ::-webkit-scrollbar{
   display: none;
@@ -86,7 +91,7 @@ a{
   background-repeat: no-repeat;
 }
 .chat-list-person-name{
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #000;
 }

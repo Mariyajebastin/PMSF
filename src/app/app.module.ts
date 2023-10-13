@@ -28,6 +28,13 @@ import { EmployeeAnnouncementComponent } from './employee-announcement/employee-
 import { EmployeeChatComponent } from './employee-chat/employee-chat.component';
 import { EmployeeSidebarIconComponent } from './employee-sidebar-icon/employee-sidebar-icon.component';
 import {RouterModule, Routes} from "@angular/router";
+import { ManagerCalendarComponent } from './manager-calendar/manager-calendar.component';
+import { ManagerEditTaskComponent } from './manager-edit-task/manager-edit-task.component';
+import { ManagerCreateEmployeeComponent } from './manager-create-employee/manager-create-employee.component';
+import { PasswordFieldComponent } from './password-field/password-field.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { EmployeeProfileCardComponent } from './employee-profile-card/employee-profile-card.component';
+import { ManagerAttendanceComponent } from './manager-attendance/manager-attendance.component';
 // EmployeeLoginComponent
 
 
@@ -79,7 +86,14 @@ const routes: Routes = [
     EmployeeSidebarIconsComponent,
     EmployeeAnnouncementComponent,
     EmployeeChatComponent,
-    EmployeeSidebarIconComponent
+    EmployeeSidebarIconComponent,
+    ManagerCalendarComponent,
+    ManagerEditTaskComponent,
+    ManagerCreateEmployeeComponent,
+    PasswordFieldComponent,
+    EmployeeProfileComponent,
+    EmployeeProfileCardComponent,
+    ManagerAttendanceComponent
   ],
   imports: [
     BrowserModule,

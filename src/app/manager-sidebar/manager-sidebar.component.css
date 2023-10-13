@@ -46,14 +46,14 @@ a{
   text-transform: uppercase;
 }
 .menu-container{
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
 }
 .menu{
   display: flex;
   flex-direction: column;
 }
 .menu-option{
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #FFF;
 }
@@ -67,6 +67,8 @@ a{
 }
 .menu svg{
   margin-right: 5px;
+  height: 20px !important;
+  width: 20px !important;
 }
 .sign-out-container{
   position: absolute;
@@ -85,7 +87,7 @@ a{
   margin-right: 5px;
 }
 .sign-out{
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #FFF;
 }

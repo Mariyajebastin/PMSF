@@ -19,7 +19,7 @@
 
 }
 .all-task-text{
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 .fil-sort-search-con{
@@ -85,6 +85,10 @@ table{
   border-left: none;
   border-right: none;
 }
+td{
+  border-left: none;
+  border-right: none;
+}
 .edit-btn{
   font-size: 0.7rem;
   font-weight: 500;
@@ -143,8 +147,8 @@ table{
 }
 .task-card-align{
   position: absolute;
-  width: 100%;
-  display: none;
+  left: 12rem;
+  display: block;
 }
 .btn-con{
   margin-top: 1.5rem;
@@ -163,5 +167,5 @@ table{
   height: 30px;
   width: 85px;
   cursor: pointer;
-  transform: translateX(-4rem);
+  /*transform: translateX(-4rem);*/
 }

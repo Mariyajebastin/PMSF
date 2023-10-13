@@ -9,9 +9,11 @@
 .new-task-con{
   margin-top: 3rem;
   display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 .new-task-text{
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 500;
   color: #000;
 }
@@ -22,7 +24,7 @@
 
 }
 .t-top-name{
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .star{
@@ -39,6 +41,11 @@
   font-weight: 400;
   padding-top: 10px;
   padding-left: 15px;
+}
+.date-priority{
+  display: flex;
+  gap: 8rem;
+  align-items: center
 }
 .sub-date-con{
   margin-top: 0.5rem;
@@ -58,6 +65,28 @@
   font-weight: 400;
   height: 28px;
   padding-left: 10px;
+}
+.priority-con{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.priority-text{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+select{
+  font-size: 0.7rem;
+  padding: 3px;
+  background-color: #E8E8E8;
+  border: none;
+}
+option{
+  padding: 5px;
+  color: #6B6B6B;
+}
+.high-option{
+  color: red;
 }
 .attach-con{
   display: flex;
