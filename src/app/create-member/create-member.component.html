@@ -18,7 +18,7 @@
       <form [formGroup]="employeeForm">
         <div class="text-field-container">
           <div class="text-field-align">
-            <app-text-field value="Employee Name" [control]="employeeForm.get('employee name')"></app-text-field>
+            <app-text-field value="Employee Name" [control]="employeeForm.get('employee_name')"></app-text-field>
           </div>
           <div class="text-field-align">
             <app-text-field value="Designation" [control]="employeeForm.get('designation')"></app-text-field>
@@ -26,7 +26,7 @@
         </div>
         <div class="text-field-container">
           <div class="text-field-align">
-            <app-text-field value="Email Id" [control]="employeeForm.get('email id')"></app-text-field>
+            <app-text-field value="Email Id" [control]="employeeForm.get('email_id')"></app-text-field>
           </div>
           <div class="text-field-align">
             <app-password-field value="Password" [control]="employeeForm.get('password')"></app-password-field>
@@ -96,7 +96,7 @@
       </div>
     </div>
     <div class="save-btn-con">
-      <input class="save-btn" type="button" value="Save" (click)="doSave()">
+      <input class="save-btn" type="button" value="Save" (click)="createManager()">
     </div>
     <div class="create-emp-con">
       <span class="create-emp">Want to add new employee?</span>
@@ -106,3 +106,4 @@
   <app-sidebar-icons></app-sidebar-icons>
   <app-date-time-field></app-date-time-field>
 </div>
+<app-toaster #toaster></app-toaster>

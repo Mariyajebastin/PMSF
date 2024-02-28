@@ -12,40 +12,32 @@
       </svg>
       <span class="new-task-text">New Task</span>
     </div>
-    <div class="text-area-con">
-      <form [formGroup]="taskBriefForm">
+    <form [formGroup]="createTaskfForm">
+      <div class="text-area-con">
         <div class="text-area">
           <span class="t-top-name">Task Brief</span>
           <span class="star">*</span>
-          <textarea rows="10" cols="10" class="input-text-area" [formControl]="taskBriefForm.get('task brief')"></textarea>
-        </div>
-      </form>
-    </div>
-<!--    <div class="multiselect-dropdown-con">-->
-<!--      <div class="dropdown-one">-->
-<!--        <span class="created-by">Created by</span>-->
-<!--        <div class="dropdown-con">-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-    <div class="sub-date-con">
-      <div class="date-priority">
-        <div class="sub-date">
-          <span class="sub-date-text">Submit Date</span>
-          <input class="input-date" type="date">
-        </div>
-        <div class="priority-con">
-          <span class="priority-text">Priority</span>
-          <select>
-            <option >Select</option>
-            <option class="high-option">High</option>
-          </select>
+          <textarea rows="10" cols="10" class="input-text-area" [formControl]="createTaskfForm.get('task_brief')"></textarea>
         </div>
       </div>
-      <div class="attach-con">
-        <span class="attach-text">Attach</span>
-        <div class="file-upload">
-          <label class="file-upload-label" for="file-input">
+      <div class="sub-date-con">
+        <div class="date-priority">
+          <div class="sub-date">
+            <span class="sub-date-text">Submit Date</span>
+            <input class="input-date" type="date" [formControl]="createTaskfForm.get('date')">
+          </div>
+          <div class="priority-con">
+            <span class="priority-text">Priority</span>
+            <select [formControl]="createTaskfForm.get('priority')">
+              <option >Select</option>
+              <option class="high-option">High</option>
+            </select>
+          </div>
+        </div>
+        <div class="attach-con">
+          <span class="attach-text">Attach</span>
+          <div class="file-upload">
+            <label class="file-upload-label" for="file-input">
             <span class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <mask id="mask0_15_237" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="17">
@@ -56,16 +48,18 @@
                 </g>
               </svg>
             </span>
-            Upload
-          </label>
-          <input type="file" id="file-input" class="file-input" accept="*">
+              Upload
+            </label>
+            <input type="file" id="file-input" class="file-input" accept="*" [formControl]="createTaskfForm.get('attach_file')" (change)="getFile($event)">
+          </div>
+        </div>
+        <div class="btn-con">
+          <input class="save-btn" type="button" value="Save" (click)="doCreate()">
         </div>
       </div>
-      <div class="btn-con">
-        <input class="save-btn" type="button" value="Save">
-      </div>
-    </div>
+    </form>
   </div>
   <app-date-time-field></app-date-time-field>
   <app-sidebar-icons></app-sidebar-icons>
 </div>
+<app-toaster #toaster></app-toaster>

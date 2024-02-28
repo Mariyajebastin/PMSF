@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {WebapiService} from "../webapi.service"
 import {Router} from "@angular/router";
 
 @Component({
@@ -9,18 +10,30 @@ import {Router} from "@angular/router";
 })
 export class ManagerLoginComponent {
   public loginForm : FormGroup | any
-  constructor(private router:Router,) {
-    this.loginForm = new FormControl( {
-      email_id : new FormControl('',[Validators.required]),
-      password : new FormControl('',[Validators.required])
-      }
-    )
+  constructor(public router:Router, private http: WebapiService) {
+    this.loginForm = new FormGroup ({
+      email_id : new FormControl('',Validators.required),
+      password : new FormControl('',Validators.required)
+    })
   }
 
   doLogin() {
-    if (this.loginForm.valid){
-      
+    if(this.loginForm.valid){
+      const formData = this.loginForm.value;
+      this.http.doLogin(formData).subscribe(
+        response =>{
+          let res = JSON.parse(JSON.stringify(response));
+          console.log("from 25",res)
+          this.router.navigate(['/dashboard']);
+          this.loginForm.reset()
+        },error =>{
+          console.log(error)
+        }
+      )
     }
-    this.router.navigate(['/dashboard']);
+    else {
+      this.loginForm.markAllAsTouched();
+    }
+
   }
 }

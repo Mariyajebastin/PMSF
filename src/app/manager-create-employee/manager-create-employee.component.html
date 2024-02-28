@@ -11,7 +11,7 @@
       <form [formGroup]="createForm">
         <div class="text-field-container">
           <div class="text-field-align">
-            <app-text-field value="Employee Name" [control]="createForm.get('employee name')"></app-text-field>
+            <app-text-field value="Employee Name" [control]="createForm.get('employee_name')"></app-text-field>
           </div>
           <div class="text-field-align">
             <app-text-field value="Designation" [control]="createForm.get('designation')"></app-text-field>
@@ -19,7 +19,7 @@
         </div>
         <div class="text-field-container">
           <div class="text-field-align">
-            <app-text-field value="Email Id" [control]="createForm.get('email id')"></app-text-field>
+            <app-text-field value="Email Id" [control]="createForm.get('email_id')"></app-text-field>
           </div>
           <div class="text-field-align">
             <app-password-field value="Password" [control]="createForm.get('password')"></app-password-field>
@@ -42,3 +42,4 @@
   <app-date-time-field></app-date-time-field>
   <app-sidebar-icons></app-sidebar-icons>
 </div>
+<app-toaster #toaster></app-toaster>

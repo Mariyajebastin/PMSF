@@ -12,20 +12,24 @@
       </svg>
       <span class="new-announcement-text">New Announcement</span>
     </div>
-    <div class="announcement-container"></div>
-    <div class="name-date-con">
-      <div class="name-con">
-        <span class="name">Name</span>
-        <input class="input-name" type="text">
+    <form [formGroup]="announceForm">
+      <div class="announcement-container">
+        <textarea rows="10" cols="10" class="input-announce" [formControl]="announceForm.get('announcement')"></textarea>
       </div>
-      <div class="date-con">
-        <span class="date-text">Date</span>
-        <input class="input-date" type="text">
+      <div class="name-date-con">
+        <div class="name-con">
+          <span class="name">Name</span>
+          <input class="input-name" type="text" [formControl]="announceForm.get('name')">
+        </div>
+        <div class="date-con">
+          <span class="date-text">Date</span>
+          <input class="input-date" type="date" [formControl]="announceForm.get('date')">
+        </div>
       </div>
-    </div>
-    <div class="btn-con">
-      <input class="publish-btn" type="button" value="Publish">
-    </div>
+      <div class="btn-con">
+        <input class="publish-btn" type="button" value="Publish" (click)="doPublish()">
+      </div>
+    </form>
     <div class="old-announcement-con">
       <div class="old-announcement-text-con">
         <div class="old-announcement-text">Old Announcements</div>
@@ -40,3 +44,4 @@
   <app-date-time-field></app-date-time-field>
   <app-sidebar-icons></app-sidebar-icons>
 </div>
+<app-toaster #toaster></app-toaster>

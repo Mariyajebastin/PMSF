@@ -36,6 +36,8 @@ import { EmployeeProfileComponent } from './employee-profile/employee-profile.co
 import { EmployeeProfileCardComponent } from './employee-profile-card/employee-profile-card.component';
 import { ManagerAttendanceComponent } from './manager-attendance/manager-attendance.component';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from "@angular/common/http";
+import { ToasterComponent } from './toaster/toaster.component';
 // EmployeeLoginComponent
 
 
@@ -95,7 +97,8 @@ const routes: Routes = [
     PasswordFieldComponent,
     EmployeeProfileComponent,
     EmployeeProfileCardComponent,
-    ManagerAttendanceComponent
+    ManagerAttendanceComponent,
+    ToasterComponent
   ],
   imports: [
     BrowserModule,
@@ -103,6 +106,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule
   ],
   exports: [RouterModule],
   providers: [],

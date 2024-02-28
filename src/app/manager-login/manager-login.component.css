@@ -61,6 +61,12 @@
   color: #000;
   padding-left: 10px;
 }
+.alert-text{
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: #ff1000;
+  margin-top: 3px;
+}
 .text-field:nth-child(3){
   margin-top: 23px;
 }

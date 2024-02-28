@@ -4,7 +4,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="7">
+          <list size="14">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -12,6 +12,13 @@
             <item index="4" class="java.lang.String" itemvalue="embed" />
             <item index="5" class="java.lang.String" itemvalue="script" />
             <item index="6" class="java.lang.String" itemvalue="router-outlet" />
+            <item index="7" class="java.lang.String" itemvalue="app-sidebar-icons" />
+            <item index="8" class="java.lang.String" itemvalue="app-date-time-field" />
+            <item index="9" class="java.lang.String" itemvalue="app-manager-sidebar" />
+            <item index="10" class="java.lang.String" itemvalue="app-text-field" />
+            <item index="11" class="java.lang.String" itemvalue="app-password-field" />
+            <item index="12" class="java.lang.String" itemvalue="app-announcement-card" />
+            <item index="13" class="java.lang.String" itemvalue="app-toaster" />
           </list>
         </value>
       </option>
