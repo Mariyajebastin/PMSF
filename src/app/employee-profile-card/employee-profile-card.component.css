@@ -1,0 +1,55 @@
+.employee-card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 210px;
+  padding: 20px;
+  background-color: #F4FBFF;
+  border-radius: 6px;
+}
+.employee-profile-img-con{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+employee-profile-img{
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/img/emp profile img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.employee-name{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.employee-role{
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.employee-department{
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.active-sts{
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: #30B53D;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.contact-con{
+
+}
+.email{
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.number{
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+

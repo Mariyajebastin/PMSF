@@ -1,0 +1,44 @@
+<div class="total-container">
+  <app-manager-sidebar></app-manager-sidebar>
+  <div class="body-container">
+    <div class="new-employee-con">
+      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="19" viewBox="0 0 27 19" fill="none">
+        <path d="M14.0625 9.44375C14.6062 8.84375 15.0234 8.15937 15.3141 7.39062C15.6047 6.62187 15.75 5.825 15.75 5C15.75 4.175 15.6047 3.37812 15.3141 2.60937C15.0234 1.84062 14.6062 1.15625 14.0625 0.55625C15.1875 0.70625 16.125 1.20312 16.875 2.04687C17.625 2.89062 18 3.875 18 5C18 6.125 17.625 7.10937 16.875 7.95312C16.125 8.79687 15.1875 9.29375 14.0625 9.44375ZM20.25 18.5V15.125C20.25 14.45 20.1 13.8078 19.8 13.1984C19.5 12.5891 19.1063 12.05 18.6188 11.5812C19.575 11.9187 20.4609 12.3547 21.2766 12.8891C22.0922 13.4234 22.5 14.1687 22.5 15.125V18.5H20.25ZM22.5 10.625V8.375H20.25V6.125H22.5V3.875H24.75V6.125H27V8.375H24.75V10.625H22.5ZM9 9.5C7.7625 9.5 6.70313 9.05937 5.82188 8.17812C4.94063 7.29687 4.5 6.2375 4.5 5C4.5 3.7625 4.94063 2.70312 5.82188 1.82187C6.70313 0.940625 7.7625 0.5 9 0.5C10.2375 0.5 11.2969 0.940625 12.1781 1.82187C13.0594 2.70312 13.5 3.7625 13.5 5C13.5 6.2375 13.0594 7.29687 12.1781 8.17812C11.2969 9.05937 10.2375 9.5 9 9.5ZM0 18.5V15.35C0 14.7125 0.164062 14.1266 0.492188 13.5922C0.820312 13.0578 1.25625 12.65 1.8 12.3687C2.9625 11.7875 4.14375 11.3516 5.34375 11.0609C6.54375 10.7703 7.7625 10.625 9 10.625C10.2375 10.625 11.4563 10.7703 12.6562 11.0609C13.8562 11.3516 15.0375 11.7875 16.2 12.3687C16.7438 12.65 17.1797 13.0578 17.5078 13.5922C17.8359 14.1266 18 14.7125 18 15.35V18.5H0ZM9 7.25C9.61875 7.25 10.1484 7.02969 10.5891 6.58906C11.0297 6.14844 11.25 5.61875 11.25 5C11.25 4.38125 11.0297 3.85156 10.5891 3.41094C10.1484 2.97031 9.61875 2.75 9 2.75C8.38125 2.75 7.85156 2.97031 7.41094 3.41094C6.97031 3.85156 6.75 4.38125 6.75 5C6.75 5.61875 6.97031 6.14844 7.41094 6.58906C7.85156 7.02969 8.38125 7.25 9 7.25ZM2.25 16.25H15.75V15.35C15.75 15.1437 15.6984 14.9562 15.5953 14.7875C15.4922 14.6187 15.3562 14.4875 15.1875 14.3937C14.175 13.8875 13.1531 13.5078 12.1219 13.2547C11.0906 13.0016 10.05 12.875 9 12.875C7.95 12.875 6.90937 13.0016 5.87812 13.2547C4.84687 13.5078 3.825 13.8875 2.8125 14.3937C2.64375 14.4875 2.50781 14.6187 2.40469 14.7875C2.30156 14.9562 2.25 15.1437 2.25 15.35V16.25Z" fill="black"/>
+      </svg>
+      <span class="new-emp-text">New Employee</span>
+    </div>
+    <div>
+      <form [formGroup]="createForm">
+        <div class="text-field-container">
+          <div class="text-field-align">
+            <app-text-field value="Employee Name" [control]="createForm.get('employee name')"></app-text-field>
+          </div>
+          <div class="text-field-align">
+            <app-text-field value="Designation" [control]="createForm.get('designation')"></app-text-field>
+          </div>
+        </div>
+        <div class="text-field-container">
+          <div class="text-field-align">
+            <app-text-field value="Email Id" [control]="createForm.get('email id')"></app-text-field>
+          </div>
+          <div class="text-field-align">
+            <app-password-field value="Password" [control]="createForm.get('password')"></app-password-field>
+          </div>
+        </div>
+        <div class="text-field-container">
+          <div class="text-field-align">
+            <app-text-field value="DOB" [control]="createForm.get('dob')"></app-text-field>
+          </div>
+          <div class="text-field-align">
+            <app-text-field value="DOJ" [control]="createForm.get('doj')"></app-text-field>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="btn-con">
+      <input class="save-btn" type="button" value="Save" (click)="doSave()">
+    </div>
+  </div>
+  <app-date-time-field></app-date-time-field>
+  <app-sidebar-icons></app-sidebar-icons>
+</div>

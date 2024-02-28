@@ -15,22 +15,24 @@
       </div>
     </div>
     <div class="">
-      <div class="text-field-container">
-        <div class="text-field-align">
-          <app-text-field value="Employee Name"></app-text-field>
+      <form [formGroup]="employeeForm">
+        <div class="text-field-container">
+          <div class="text-field-align">
+            <app-text-field value="Employee Name" [control]="employeeForm.get('employee name')"></app-text-field>
+          </div>
+          <div class="text-field-align">
+            <app-text-field value="Designation" [control]="employeeForm.get('designation')"></app-text-field>
+          </div>
         </div>
-        <div class="text-field-align">
-          <app-text-field value="Designation"></app-text-field>
+        <div class="text-field-container">
+          <div class="text-field-align">
+            <app-text-field value="Email Id" [control]="employeeForm.get('email id')"></app-text-field>
+          </div>
+          <div class="text-field-align">
+            <app-password-field value="Password" [control]="employeeForm.get('password')"></app-password-field>
+          </div>
         </div>
-      </div>
-      <div class="text-field-container">
-        <div class="text-field-align">
-          <app-text-field value="Email Id"></app-text-field>
-        </div>
-        <div class="text-field-align">
-          <app-password-field value="Password"></app-password-field>
-        </div>
-      </div>
+      </form>
     </div>
     <div class="permission-container">
       <div class="permission-text-con">
@@ -94,11 +96,11 @@
       </div>
     </div>
     <div class="save-btn-con">
-      <input class="save-btn" type="button" value="Save">
+      <input class="save-btn" type="button" value="Save" (click)="doSave()">
     </div>
     <div class="create-emp-con">
       <span class="create-emp">Want to add new employee?</span>
-      <input class="create-btn" type="button" value="Create Employee">
+      <input class="create-btn" type="button" value="Create Employee" (click)="doCreate()">
     </div>
   </div>
   <app-sidebar-icons></app-sidebar-icons>

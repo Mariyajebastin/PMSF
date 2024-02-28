@@ -8,19 +8,21 @@
         <span class="heading-text-b">Management</span>
         <span class="heading-text">Space</span>
       </div>
-      <div class="login-container">
-        <div class="login-text">Login</div>
-        <div class="text-field">
-          <input class="input-text" type="text" placeholder="Email Id">
+      <form [formGroup]="loginForm">
+        <div class="login-container">
+          <div class="login-text">Login</div>
+          <div class="text-field">
+            <input class="input-text" type="text" name="email-id" placeholder="Email Id" [formControl]="loginForm.get('email id')">
+          </div>
+          <div class="text-field">
+            <input class="input-text" type="password" name="password" placeholder="Password" [formControl]="loginForm.get('password')">
+          </div>
+          <button class="login-btn" (click)="doLogin()">Login</button>
+          <div class="forgot-pass-con">
+            <a class="forgot-pass" href="">Forgot password?</a>
+          </div>
         </div>
-        <div class="text-field">
-          <input class="input-text" type="password" placeholder="Password">
-        </div>
-        <button class="login-btn" (click)="doLogin()">Login</button>
-        <div class="forgot-pass-con">
-          <a class="forgot-pass" href="">Forgot password?</a>
-        </div>
-      </div>
+      </form>
       <div class="bottom-con">
         <span class="bottom-text">© Sky Solutions 2023</span>
       </div>

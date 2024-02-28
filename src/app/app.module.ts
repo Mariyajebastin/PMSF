@@ -35,6 +35,7 @@ import { PasswordFieldComponent } from './password-field/password-field.componen
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 import { EmployeeProfileCardComponent } from './employee-profile-card/employee-profile-card.component';
 import { ManagerAttendanceComponent } from './manager-attendance/manager-attendance.component';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 // EmployeeLoginComponent
 
 
@@ -56,7 +57,8 @@ const routes: Routes = [
   { path: 'view-announcement', component:ManagerNewAnnouncementComponent},
   { path: 'employees', component: ManagerEmployeesComponent },
   { path: 'do-chat', component: ManagerChatComponent },
-  { path: 'manager-sign-out', component:ManagerLoginComponent}
+  { path: 'manager-sign-out', component:ManagerLoginComponent},
+  { path: 'manager-create-employee',component: ManagerCreateEmployeeComponent}
 
 ];
 
@@ -98,7 +100,9 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     NgSelectModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
+    FormsModule,
   ],
   exports: [RouterModule],
   providers: [],
