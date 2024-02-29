@@ -26,8 +26,17 @@ export class WebapiService {
   postTask(data:any){
     return this.http.post(this.serverIp+"task",data)
   }
-  
+  getTask(){
+    return this.http.get(this.serverIp+"task")
+  }
   postAnnouncement(data: any){
     return this.http.post(this.serverIp+"announcement",data)
+  }
+
+  getEmployee(){
+    return this.http.get(this.serverIp+"employee")
+  }
+  loginEmployee(data: any){
+    return this.http.post(this.serverIp+"employee/login",data)
   }
 }

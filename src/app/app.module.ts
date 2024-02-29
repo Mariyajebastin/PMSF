@@ -38,6 +38,7 @@ import { ManagerAttendanceComponent } from './manager-attendance/manager-attenda
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import { ToasterComponent } from './toaster/toaster.component';
+import { DatePipe } from '@angular/common';
 // EmployeeLoginComponent
 
 
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: 'tasks', component:EmployeeTaskComponent},
   { path: 'chats', component:EmployeeChatComponent},
   { path: 'signout', component:EmployeeLoginComponent},
+  { path: 'profile',component: EmployeeProfileComponent},
 
   // Manager portal
   { path: 'manager', component: ManagerLoginComponent },
@@ -106,10 +108,11 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    // DatePipe
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -33,8 +33,27 @@
   width: 325px;
   margin-top: 1.5rem;
 }
+.input-file::file-selector-button{
+  display: none;
+}
+.input-file{
+  font-size: 0.7rem;
+}
+.upload-profile{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #005E93;
+  background-color: #C9ECFF;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
 .permission-container{
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 .permission-text{
   font-size: 1rem;
@@ -60,9 +79,10 @@
 .permission-name{
   font-size: 0.8rem;
   font-weight: 400;
+  cursor: pointer;
 }
 .save-btn-con{
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .save-btn{
   font-size: 0.85rem;

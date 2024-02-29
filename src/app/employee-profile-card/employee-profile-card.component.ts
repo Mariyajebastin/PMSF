@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./employee-profile-card.component.css']
 })
 export class EmployeeProfileCardComponent {
-  @Input () value : any
+ @Input() employee_name : any;
+ @Input() designation : any;
+ @Input() email_id : any;
 }

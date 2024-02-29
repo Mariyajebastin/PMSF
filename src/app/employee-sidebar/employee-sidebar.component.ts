@@ -12,9 +12,11 @@ export class EmployeeSidebarComponent {
 
   }
   showTask() {
-
     this.router.navigate(["/tasks"])
 
+  }
+  profile(){
+    this.router.navigate(["/profile"])
   }
   showAnnouncement() {
     this.router.navigate(["/announcement"])

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-employee-task-card',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-task-card.component.css']
 })
 export class EmployeeTaskCardComponent {
-
+    @Input() showDialog = false;
+    
 }

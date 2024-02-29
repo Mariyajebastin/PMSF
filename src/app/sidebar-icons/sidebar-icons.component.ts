@@ -6,5 +6,27 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sidebar-icons.component.css']
 })
 export class SidebarIconsComponent {
-  @Input () searchBar : any
+  @Input () searchBar : any;
+  @Input() showNotification = false;
+  @Input() showWish = false;
+  @Input()showSearch = false;
+
+
+  openWish(){
+    if(this.showWish){
+      this.showWish = false;
+    }
+    else {
+      this.showWish = true;
+    }
+  }
+
+  openSearch(){
+    if(this.showSearch){
+      this.showSearch = false;
+    }
+    else {
+      this.showSearch = true;
+    }
+  }
 }

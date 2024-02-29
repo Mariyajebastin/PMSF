@@ -11,15 +11,12 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: red;
 }
-employee-profile-img{
+.employee-profile-img{
   height: 100%;
   width: 100%;
-  background-image: url("/assets/img/emp profile img.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 50%;
+  object-fit: contain;
 }
 .employee-name{
   font-size: 0.8rem;
