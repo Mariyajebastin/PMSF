@@ -22,7 +22,7 @@ export class EmployeeLoginComponent {
       this.http.loginEmployee(this.loginForm.value).subscribe(
         response =>{
           let serverResponse = JSON.parse(JSON.stringify(response));
-           this.router.navigate(['/announcement']);
+           this.router.navigate(['/tasks']);
         }
       )
     }else {

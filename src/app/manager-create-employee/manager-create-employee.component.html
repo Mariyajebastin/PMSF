@@ -11,26 +11,65 @@
       <form [formGroup]="createForm">
         <div class="text-field-container">
           <div class="text-field-align">
-            <app-text-field value="Employee Name" [control]="createForm.get('employee_name')"></app-text-field>
+            <div class="text-field">
+              <span class="top-name">Employee Name</span>
+              <span class="star">*</span>
+              <input class="input-text" type="text" [formControl]="createForm.get('employee_name')">
+            </div>
           </div>
           <div class="text-field-align">
-            <app-text-field value="Designation" [control]="createForm.get('designation')"></app-text-field>
+            <div class="text-field">
+              <span class="top-name">Designation</span>
+              <span class="star">*</span>
+              <input class="input-text" type="text" [formControl]="createForm.get('designation')">
+            </div>
           </div>
         </div>
         <div class="text-field-container">
           <div class="text-field-align">
-            <app-text-field value="Email Id" [control]="createForm.get('email_id')"></app-text-field>
+            <div class="text-field">
+              <span class="top-name">Emil Id</span>
+              <span class="star">*</span>
+              <input class="input-text" type="text" [formControl]="createForm.get('email_id')">
+            </div>
           </div>
           <div class="text-field-align">
-            <app-password-field value="Password" [control]="createForm.get('password')"></app-password-field>
+            <div class="text-field">
+              <span class="top-name">password</span>
+              <span class="star">*</span>
+              <input class="input-text" type="password" [formControl]="createForm.get('password')">
+            </div>
           </div>
         </div>
         <div class="text-field-container">
           <div class="text-field-align">
-            <app-text-field value="DOB" [control]="createForm.get('dob')"></app-text-field>
+            <div class="text-field">
+              <span class="top-name">DOB</span>
+              <span class="star">*</span>
+              <input class="input-text" type="date" [formControl]="createForm.get('dob')">
+            </div>
           </div>
           <div class="text-field-align">
-            <app-text-field value="DOJ" [control]="createForm.get('doj')"></app-text-field>
+            <div class="text-field">
+              <span class="top-name">DOJ</span>
+              <span class="star">*</span>
+              <input class="input-text" type="date" [formControl]="createForm.get('doj')">
+            </div>
+          </div>
+        </div>
+        <div class="text-field-container">
+          <div class="text-field-align">
+            <label class="upload-profile" for="file">Upload profile picture
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <mask id="mask0_337_1304" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                  <rect width="15" height="15" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_337_1304)">
+                  <path d="M6.875 10V4.90625L5.25 6.53125L4.375 5.625L7.5 2.5L10.625 5.625L9.75 6.53125L8.125 4.90625V10H6.875ZM3.75 12.5C3.40625 12.5 3.11198 12.3776 2.86719 12.1328C2.6224 11.888 2.5 11.5938 2.5 11.25V9.375H3.75V11.25H11.25V9.375H12.5V11.25C12.5 11.5938 12.3776 11.888 12.1328 12.1328C11.888 12.3776 11.5938 12.5 11.25 12.5H3.75Z" fill="#005E93"/>
+                </g>
+              </svg>
+            </label>
+            <input class="input-file" type="file" id="file" [formControl]="createForm.get('profile_picture')" (change)="getImage($event)">
           </div>
         </div>
       </form>

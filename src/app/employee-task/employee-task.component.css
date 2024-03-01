@@ -168,3 +168,9 @@ td{
   cursor: pointer;
   /*transform: translateX(-4rem);*/
 }
+.task-brief{
+  white-space: pre;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

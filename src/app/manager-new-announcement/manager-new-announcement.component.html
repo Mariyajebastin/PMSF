@@ -35,9 +35,7 @@
         <div class="old-announcement-text">Old Announcements</div>
       </div>
       <div class="announcements-con">
-        <app-announcement-card></app-announcement-card>
-        <app-announcement-card></app-announcement-card>
-        <app-announcement-card></app-announcement-card>
+        <app-announcement-card *ngFor="let announce of announce_data" [date]="announce.date" [announcement_name]="announce.name" [announcement]="announce.announcement"></app-announcement-card>
       </div>
     </div>
   </div>

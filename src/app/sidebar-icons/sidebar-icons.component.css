@@ -141,7 +141,12 @@ a{
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  background-color: green;
+}
+.emp-profile-img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
 }
 .birthday-text{
   font-size: 1.3rem;

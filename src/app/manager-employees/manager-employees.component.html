@@ -8,7 +8,7 @@
       <span class="employee-text">Employees</span>
     </div>
     <div class="employee-container">
-      <app-employee-profile-card *ngFor="let employee of employee_data" [employee_name]="employee.employee_name" [email_id]="employee.email_id" [designation]="employee.designation"></app-employee-profile-card>
+      <app-employee-profile-card *ngFor="let employee of employee_data" [employee_name]="employee.employee_name" [email_id]="employee.email_id" [designation]="employee.designation" [profile_picture]="getURL(employee.profile_picture)"></app-employee-profile-card>
     </div>
     <div class="btn-con">
       <input class="load-more-btn" type="button" value="Load more">

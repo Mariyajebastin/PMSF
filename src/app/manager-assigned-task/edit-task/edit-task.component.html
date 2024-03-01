@@ -1,4 +1,4 @@
-<div class="total-container">
+<div class="total-container" *ngIf="showEditTask">
   <app-manager-sidebar></app-manager-sidebar>
   <div class="body-container">
     <div class="new-task-con">
@@ -20,13 +20,29 @@
         </g>
       </svg>
     </div>
-    <div class="text-area-con">
-      <div class="text-area">
+    <form [formGroup]="editForm">
+      <div class="task-con">
         <div class="name-edit-con">
-          <div>
-            <span class="t-top-name">Task Brief</span>
-            <span class="star">*</span>
-          </div>
+          <label class="t-top-name">Task name</label>
+          <span class="star">*</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 19 19" fill="none">
+            <mask id="mask0_215_289" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="19">
+              <rect width="19" height="19" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_215_289)">
+              <path d="M3.95833 16.6251C3.52292 16.6251 3.15017 16.4701 2.8401 16.16C2.53003 15.8499 2.375 15.4772 2.375 15.0418V3.95843C2.375 3.52301 2.53003 3.15027 2.8401 2.8402C3.15017 2.53013 3.52292 2.3751 3.95833 2.3751H11.024L9.44062 3.95843H3.95833V15.0418H15.0417V9.53968L16.625 7.95635V15.0418C16.625 15.4772 16.47 15.8499 16.1599 16.16C15.8498 16.4701 15.4771 16.6251 15.0417 16.6251H3.95833ZM7.125 11.8751V8.51051L14.3885 1.24697C14.5469 1.08864 14.725 0.969889 14.9229 0.890723C15.1208 0.811556 15.3187 0.771973 15.5167 0.771973C15.7278 0.771973 15.929 0.811556 16.1203 0.890723C16.3116 0.969889 16.4865 1.08864 16.6448 1.24697L17.7531 2.3751C17.8983 2.53343 18.0104 2.70826 18.0896 2.89958C18.1687 3.0909 18.2083 3.28551 18.2083 3.48343C18.2083 3.68135 18.172 3.87597 18.0995 4.06729C18.0269 4.2586 17.9115 4.43343 17.7531 4.59176L10.4896 11.8751H7.125ZM8.70833 10.2918H9.81667L14.4083 5.7001L13.8542 5.14593L13.2802 4.59176L8.70833 9.16364V10.2918Z" fill="#6B6B6B"/>
+            </g>
+          </svg>
+        </div>
+        <input type="text" class="input-task" [formControl]="editForm.get('task_name')">
+      </div>
+      <div class="text-area-con">
+        <div class="text-area">
+          <div class="name-edit-con">
+            <div>
+              <span class="t-top-name">Task Brief</span>
+              <span class="star">*</span>
+            </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 19 19" fill="none">
               <mask id="mask0_215_289" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="19">
                 <rect width="19" height="19" fill="#D9D9D9"/>
@@ -35,28 +51,30 @@
                 <path d="M3.95833 16.6251C3.52292 16.6251 3.15017 16.4701 2.8401 16.16C2.53003 15.8499 2.375 15.4772 2.375 15.0418V3.95843C2.375 3.52301 2.53003 3.15027 2.8401 2.8402C3.15017 2.53013 3.52292 2.3751 3.95833 2.3751H11.024L9.44062 3.95843H3.95833V15.0418H15.0417V9.53968L16.625 7.95635V15.0418C16.625 15.4772 16.47 15.8499 16.1599 16.16C15.8498 16.4701 15.4771 16.6251 15.0417 16.6251H3.95833ZM7.125 11.8751V8.51051L14.3885 1.24697C14.5469 1.08864 14.725 0.969889 14.9229 0.890723C15.1208 0.811556 15.3187 0.771973 15.5167 0.771973C15.7278 0.771973 15.929 0.811556 16.1203 0.890723C16.3116 0.969889 16.4865 1.08864 16.6448 1.24697L17.7531 2.3751C17.8983 2.53343 18.0104 2.70826 18.0896 2.89958C18.1687 3.0909 18.2083 3.28551 18.2083 3.48343C18.2083 3.68135 18.172 3.87597 18.0995 4.06729C18.0269 4.2586 17.9115 4.43343 17.7531 4.59176L10.4896 11.8751H7.125ZM8.70833 10.2918H9.81667L14.4083 5.7001L13.8542 5.14593L13.2802 4.59176L8.70833 9.16364V10.2918Z" fill="#6B6B6B"/>
               </g>
             </svg>
-        </div>
-        <textarea rows="10" cols="10" class="input-text-area"></textarea>
-      </div>
-    </div>
-    <div class="sub-date-con">
-      <div class="date-priority">
-        <div class="sub-date">
-          <span class="sub-date-text">Submit Date</span>
-          <input class="input-date" type="date">
-        </div>
-        <div class="priority-con">
-          <span class="priority-text">Priority</span>
-          <select>
-            <option >Select</option>
-            <option class="high-option">High</option>
-          </select>
+          </div>
+          <textarea rows="10" cols="10" class="input-text-area" [formControl]="editForm.get('task_brief')"></textarea>
         </div>
       </div>
-      <div class="attach-con">
-        <span class="attach-text">Attach</span>
-        <div class="file-upload">
-          <label class="file-upload-label" for="file-input">
+      <div class="sub-date-con">
+        <div class="date-priority">
+          <div class="sub-date">
+            <span class="sub-date-text">Submit Date</span>
+            <input class="input-date" type="date" [formControl]="editForm.get('date')">
+          </div>
+          <div class="priority-con">
+            <span class="priority-text">Priority</span>
+            <select [formControl]="editForm.get('priority')">
+              <option >Select</option>
+              <option>Low</option>
+              <option>Atmost</option>
+              <option>High</option>
+            </select>
+          </div>
+        </div>
+        <div class="attach-con">
+          <span class="attach-text">Attach</span>
+          <div class="file-upload">
+            <label class="file-upload-label" for="file-input">
             <span class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <mask id="mask0_15_237" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="17">
@@ -67,17 +85,17 @@
                 </g>
               </svg>
             </span>
-            Upload
-          </label>
-          <input type="file" id="file-input" class="file-input" accept="*">
+              Upload
+            </label>
+            <input type="file" id="file-input" class="file-input" accept="*" (change)="getFile($event)">
+          </div>
         </div>
       </div>
-      <div class="btn-con">
-        <input class="save-btn" type="button" value="Save">
-      </div>
+    </form>
+    <div class="btn-con">
+      <input class="save-btn" type="button" value="Save" (click)="updateTask()">
     </div>
   </div>
-  <app-date-time-field></app-date-time-field>
   <app-sidebar-icons></app-sidebar-icons>
 </div>
 

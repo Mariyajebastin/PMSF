@@ -13,6 +13,11 @@
       <span class="new-task-text">New Task</span>
     </div>
     <form [formGroup]="createTaskfForm">
+      <div class="task-con">
+        <label class="t-top-name">Task name</label>
+        <span class="star">*</span>
+        <input type="text" class="input-task" [formControl]="createTaskfForm.get('task_name')">
+      </div>
       <div class="text-area-con">
         <div class="text-area">
           <span class="t-top-name">Task Brief</span>
@@ -29,8 +34,10 @@
           <div class="priority-con">
             <span class="priority-text">Priority</span>
             <select [formControl]="createTaskfForm.get('priority')">
-              <option >Select</option>
-              <option class="high-option">High</option>
+              <option selected>Select</option>
+              <option>Low</option>
+              <option>Atmost</option>
+              <option>High</option>
             </select>
           </div>
         </div>

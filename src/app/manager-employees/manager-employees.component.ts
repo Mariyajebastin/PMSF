@@ -26,4 +26,9 @@ export class ManagerEmployeesComponent implements OnInit{
     )
   }
 
+  getURL(source: any){
+    // @ts-ignore
+    return this.http.serverIp+source
+  }
+
 }

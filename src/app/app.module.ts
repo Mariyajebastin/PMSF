@@ -39,6 +39,7 @@ import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import { ToasterComponent } from './toaster/toaster.component';
 import { DatePipe } from '@angular/common';
+import { EditTaskComponent } from './manager-assigned-task/edit-task/edit-task.component';
 // EmployeeLoginComponent
 
 
@@ -100,7 +101,8 @@ const routes: Routes = [
     EmployeeProfileComponent,
     EmployeeProfileCardComponent,
     ManagerAttendanceComponent,
-    ToasterComponent
+    ToasterComponent,
+    EditTaskComponent
   ],
   imports: [
     BrowserModule,

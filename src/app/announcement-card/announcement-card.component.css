@@ -4,6 +4,7 @@
   background-color: #EAEAEA;
   padding: 20px;
   border-radius: 10px;
+  overflow: hidden;
 }
 .announce-date-con{
 

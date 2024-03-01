@@ -43,3 +43,44 @@
   border-radius: 2px;
   cursor: pointer;
 }
+.text-field{
+  width: 100%;
+}
+.top-name{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000;
+}
+.star{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ff0000;
+}
+.input-text{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000;
+  height: 35px;
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+.input-file::file-selector-button{
+  display: none;
+}
+.input-file{
+  font-size: 0.7rem;
+}
+.upload-profile{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #005E93;
+  background-color: #C9ECFF;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
