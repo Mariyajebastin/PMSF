@@ -36,10 +36,12 @@ export class CreateTaskComponent implements OnInit{
       response =>{
         let res = JSON.parse(JSON.stringify(response));
         console.log("from 35",res)
-        this.toaster.title = "Success";
-        this.toaster.message = "Task created successfully";
-        // this.toaster.showToasterx();
-        this.createTaskfForm.reset();
+        if (res.status){
+          this.toaster.title = "Success";
+          this.toaster.message = "Task created successfully";
+          this.toaster.showToasterx();
+          this.createTaskfForm.reset();
+        }
       },error =>{
         console.log(error)
       }
@@ -47,7 +49,7 @@ export class CreateTaskComponent implements OnInit{
   }
 
   ngOnInit(){
-    
+
   }
 
   getFile(event: any){

@@ -9,6 +9,7 @@
   padding-left: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 .new-announcement-con{
   margin-top: 2rem;
@@ -100,6 +101,7 @@
   overflow-x: scroll;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  scrollbar-width: none;
 }
 ::-webkit-scrollbar{
   display: none;

@@ -192,9 +192,9 @@ td{
 }
 .btn-con{
   margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
 }
 .load-more-btn{
   font-size: 0.8rem;
@@ -211,7 +211,7 @@ td{
 }
 .task-name{
   white-space: pre;
-  max-width: 180px;
+  max-width: 160px;
   overflow: hidden;
   text-overflow: ellipsis;
 }

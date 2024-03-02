@@ -26,23 +26,32 @@ export class ManagerCreateEmployeeComponent {
   }
 
   doSave() {
-    const formData = new FormData();
-    formData.append("employee_name",this.createForm.value.employee_name)
-    formData.append("designation",this.createForm.value.designation)
-    formData.append("email_id",this.createForm.value.email_id)
-    formData.append("password",this.createForm.value.password)
-    formData.append("dob",this.createForm.value.dob)
-    formData.append("doj",this.createForm.value.doj)
-    formData.append("profile_picture",this.profileImage)
-    this.http.postEmployee(formData).subscribe(
-       response =>{
-         let res = JSON.parse(JSON.stringify(response))
-         this.toaster.title = "Success"
-         this.toaster.message = "Account Created Successfully"
-         this.toaster.showToasterx();
-         this.createForm.reset();
-       }
-    )
+    if(this.createForm.valid){
+      const formData = new FormData();
+      formData.append("employee_name",this.createForm.value.employee_name)
+      formData.append("designation",this.createForm.value.designation)
+      formData.append("email_id",this.createForm.value.email_id)
+      formData.append("password",this.createForm.value.password)
+      formData.append("dob",this.createForm.value.dob)
+      formData.append("doj",this.createForm.value.doj)
+      formData.append("profile_picture",this.profileImage)
+      this.http.postEmployee(formData).subscribe(
+        response =>{
+          let res = JSON.parse(JSON.stringify(response))
+          if (res.status){
+            this.toaster.title = "Success"
+            this.toaster.message = "Account Created Successfully"
+            this.toaster.showToasterx();
+            this.createForm.reset();
+          }
+        },error =>{
+
+        }
+      )
+    }else {
+      this.createForm.markAllAsTouched();
+    }
+
   }
 
   getImage(event: any) {

@@ -15,6 +15,7 @@
               <span class="top-name">Employee Name</span>
               <span class="star">*</span>
               <input class="input-text" type="text" [formControl]="createForm.get('employee_name')">
+              <p class="alert-text" *ngIf="createForm.get('employee_name').hasError('required') && createForm.get('employee_name').touched">This field is required</p>
             </div>
           </div>
           <div class="text-field-align">
@@ -22,6 +23,7 @@
               <span class="top-name">Designation</span>
               <span class="star">*</span>
               <input class="input-text" type="text" [formControl]="createForm.get('designation')">
+              <p class="alert-text" *ngIf="createForm.get('designation').hasError('required') && createForm.get('designation').touched">This field is required</p>
             </div>
           </div>
         </div>
@@ -31,6 +33,7 @@
               <span class="top-name">Emil Id</span>
               <span class="star">*</span>
               <input class="input-text" type="text" [formControl]="createForm.get('email_id')">
+              <p class="alert-text" *ngIf="createForm.get('email_id').hasError('required') && createForm.get('email_id').touched">This field is required</p>
             </div>
           </div>
           <div class="text-field-align">
@@ -38,6 +41,7 @@
               <span class="top-name">password</span>
               <span class="star">*</span>
               <input class="input-text" type="password" [formControl]="createForm.get('password')">
+              <p class="alert-text" *ngIf="createForm.get('password').hasError('required') && createForm.get('password').touched">This field is required</p>
             </div>
           </div>
         </div>
@@ -47,6 +51,7 @@
               <span class="top-name">DOB</span>
               <span class="star">*</span>
               <input class="input-text" type="date" [formControl]="createForm.get('dob')">
+              <p class="alert-text" *ngIf="createForm.get('dob').hasError('required') && createForm.get('dob').touched">This field is required</p>
             </div>
           </div>
           <div class="text-field-align">
@@ -54,6 +59,7 @@
               <span class="top-name">DOJ</span>
               <span class="star">*</span>
               <input class="input-text" type="date" [formControl]="createForm.get('doj')">
+              <p class="alert-text" *ngIf="createForm.get('doj').hasError('required') && createForm.get('doj').touched">This field is required</p>
             </div>
           </div>
         </div>
@@ -70,6 +76,7 @@
               </svg>
             </label>
             <input class="input-file" type="file" id="file" [formControl]="createForm.get('profile_picture')" (change)="getImage($event)">
+            <p class="alert-text" *ngIf="createForm.get('profile_picture').hasError('required') && createForm.get('profile_picture').touched">This field is required</p>
           </div>
         </div>
       </form>

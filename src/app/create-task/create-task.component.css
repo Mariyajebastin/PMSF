@@ -126,10 +126,12 @@ option{
   position: relative;
 }
 
-.file-input {
-  opacity: 0;
-  cursor: pointer;
+.file-input::file-selector-button{
   display: none;
+}
+.file-input{
+  font-size: 0.7rem;
+  position: absolute;
 }
 
 .file-upload-label {

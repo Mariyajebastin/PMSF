@@ -37,6 +37,7 @@ export class ManagerAssignedTaskComponent implements OnInit{
     this.http.deleteTask(task_d.id).subscribe(
       response =>{
         let res = JSON.parse(JSON.stringify(response));
+        this.ngOnInit()
       }
     )
   }

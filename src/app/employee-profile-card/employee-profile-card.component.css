@@ -21,14 +21,23 @@
 .employee-name{
   font-size: 0.8rem;
   font-weight: 600;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .employee-role{
   font-size: 0.7rem;
   font-weight: 400;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .employee-department{
   font-size: 0.7rem;
   font-weight: 600;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .active-sts{
   font-size: 0.6rem;
@@ -44,6 +53,10 @@
 .email{
   font-size: 0.7rem;
   font-weight: 400;
+  width: 160px;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .number{
   font-size: 0.7rem;
