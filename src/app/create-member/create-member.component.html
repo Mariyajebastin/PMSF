@@ -45,6 +45,7 @@
               </svg>
             </label>
             <input class="input-file" type="file" id="file" [formControl]="employeeForm.get('profile_picture')" (change)="getImage($event)">
+            <p class="alert-text" *ngIf="employeeForm.get('profile_picture').hasError('required') && employeeForm.get('profile_picture').touched">This field is required</p>
           </div>
         </div>
       </form>

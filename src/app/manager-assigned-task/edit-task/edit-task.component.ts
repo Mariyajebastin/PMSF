@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import {FormControl, FormGroup, Validators } from '@angular/forms';
 import { WebapiService } from 'src/app/webapi.service';
 import { ManagerAssignedTaskComponent } from '../manager-assigned-task.component';
@@ -14,6 +14,7 @@ export class EditTaskComponent implements OnInit{
   public editForm : FormGroup | any;
   public file : any;
   public upcoming_data = new Task
+  @ViewChild('toaster') toaster : any;
 
   constructor(private http: WebapiService) {
     this.editForm = new FormGroup({
@@ -37,21 +38,30 @@ export class EditTaskComponent implements OnInit{
   }
 
   updateTask(){
-    let formData = new FormData()
-    formData.append("id",this.editForm.value.id)
-    formData.append("task_name",this.editForm.value.task_name)
-    formData.append("task_brief",this.editForm.value.task_brief)
-    formData.append("date",this.editForm.value.date)
-    formData.append("priority",this.editForm.value.priority)
-    formData.append("attach_file",this.file)
-    console.log("from 47 ",this.file);
-    // submit the data now, let me have console things
-    this.http.updateTask(this.editForm.value).subscribe(
-      response =>{
-        let res = JSON.parse(JSON.stringify(response));
-        console.log("from 50",res)
-      }
-    )
+    if (this.editForm.valid){
+      let formData = new FormData()
+      formData.append("id",this.editForm.value.id)
+      formData.append("task_name",this.editForm.value.task_name)
+      formData.append("task_brief",this.editForm.value.task_brief)
+      formData.append("date",this.editForm.value.date)
+      formData.append("priority",this.editForm.value.priority)
+      formData.append("attach_file",this.file)
+      console.log("from 47 ",this.file);
+      this.http.updateTask(this.editForm.value).subscribe(
+        response =>{
+          let res = JSON.parse(JSON.stringify(response));
+          if(res.status){
+            this.toaster.title = "Success"
+            this.toaster.message = "Task Edited Successfully"
+            this.toaster.showToasterx();
+          }
+          console.log("from 50",res)
+        }
+      )
+    }else {
+      this.editForm.markAllAsTouched();
+    }
+
   }
 
   ngOnInit(){

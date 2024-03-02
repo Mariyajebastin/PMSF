@@ -40,6 +40,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { ToasterComponent } from './toaster/toaster.component';
 import { DatePipe } from '@angular/common';
 import { EditTaskComponent } from './manager-assigned-task/edit-task/edit-task.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 // EmployeeLoginComponent
 
 
@@ -111,6 +112,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    NgMultiSelectDropDownModule.forRoot()
     // DatePipe
   ],
   exports: [RouterModule],

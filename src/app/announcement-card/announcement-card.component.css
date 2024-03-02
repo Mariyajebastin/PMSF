@@ -38,6 +38,11 @@
   font-size: 1rem;
   font-weight: 600;
   color: #005E93;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .announce-content-con{
   margin-top: 0.5rem;

@@ -24,24 +24,31 @@ export class CreateMemberComponent {
     )
   }
   createManager() {
-    const formData = new FormData();
-    formData.append("employee_name",this.employeeForm.value.employee_name);
-    formData.append("designation",this.employeeForm.value.designation);
-    formData.append("email_id",this.employeeForm.value.email_id);
-    formData.append("password",this.employeeForm.value.password);
-    formData.append("profile_picture",this.profileImage);
-    this.http.postManager(formData).subscribe(
-      response =>{
-        let res = JSON.parse(JSON.stringify(response));
-        console.log("from 29",res)
-        this.toaster.title = "Success";
-        this.toaster.message = "Account created successfully"
-        // this.toaster.showToasterx();
-        this.employeeForm.reset()
-      },error =>{
-        console.log(error)
-      }
-    )
+    if (this.employeeForm.valid){
+      const formData = new FormData();
+      formData.append("employee_name",this.employeeForm.value.employee_name);
+      formData.append("designation",this.employeeForm.value.designation);
+      formData.append("email_id",this.employeeForm.value.email_id);
+      formData.append("password",this.employeeForm.value.password);
+      formData.append("profile_picture",this.profileImage);
+      this.http.postManager(formData).subscribe(
+        response =>{
+          let res = JSON.parse(JSON.stringify(response));
+          console.log("from 29",res)
+          if (res.status){
+            this.toaster.title = "Success";
+            this.toaster.message = "Account created successfully"
+            this.toaster.showToasterx();
+            this.employeeForm.reset()
+          }
+        },error =>{
+          console.log(error)
+        }
+      )
+    }else {
+      this.employeeForm.markAllAsTouched()
+    }
+
   }
   doCreate() {
     this.router.navigate(["manager-create-employee"])

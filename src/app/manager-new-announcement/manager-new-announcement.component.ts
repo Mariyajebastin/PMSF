@@ -21,18 +21,25 @@ export class ManagerNewAnnouncementComponent implements OnInit{
   }
 
   doPublish() {
-    let formData = this.announceForm.value;
-    this.http.postAnnouncement(formData).subscribe(
-      response =>{
-        let res = JSON.parse(JSON.stringify(response));
-        this.toaster.title = "Success";
-        this.toaster.message = "Announcement created successfully";
-        this.toaster.showToasterx();
-        this.announceForm.reset()
-      },error =>{
-        console.log(error)
-      }
-    )
+    if(this.announceForm.valid){
+      let formData = this.announceForm.value;
+      this.http.postAnnouncement(formData).subscribe(
+        response =>{
+          let res = JSON.parse(JSON.stringify(response));
+          if(res.status){
+            this.toaster.title = "Success";
+            this.toaster.message = "Announcement created successfully";
+            this.toaster.showToasterx();
+            this.announceForm.reset()
+            this.ngOnInit()
+          }
+        },error =>{
+          console.log(error)
+        }
+      )
+    }else {
+      this.announceForm.markAllAsTouched()
+    }
   }
 
 

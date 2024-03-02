@@ -1,13 +1,15 @@
 .total-container{
   display: flex;
   width: 100%;
+  height: 100dvh;
+  overflow: hidden;
 }
 .body-container{
   padding-left: 3.5rem;
   width: 65%;
 }
 .new-task-con{
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -64,7 +66,7 @@
   align-items: center
 }
 .sub-date-con{
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .sub-date{
   display: flex;
@@ -168,4 +170,21 @@ option{
   cursor: pointer;
 }
 
-
+.dropdown{
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 200px;
+  /*max-height: 500px;*/
+  /*overflow-y: auto;*/
+  scrollbar-width: none;
+  position: relative;
+}
+.dropdown::-webkit-scrollbar{
+  display: none;
+}
+.dropdown-container{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
