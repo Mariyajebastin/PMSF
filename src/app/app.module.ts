@@ -47,7 +47,7 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 const routes: Routes = [
   // Employee portal
-  { path: 'employee', component: EmployeeLoginComponent },
+  { path: '', component: EmployeeLoginComponent },
   { path: 'announcement', component:EmployeeAnnouncementComponent},
   { path: 'tasks', component:EmployeeTaskComponent},
   { path: 'chats', component:EmployeeChatComponent},
@@ -113,7 +113,6 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule,
     NgMultiSelectDropDownModule.forRoot()
-    // DatePipe
   ],
   exports: [RouterModule],
   providers: [DatePipe],

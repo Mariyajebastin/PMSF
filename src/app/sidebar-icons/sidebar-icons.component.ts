@@ -29,4 +29,13 @@ export class SidebarIconsComponent {
       this.showSearch = true;
     }
   }
+
+  openNotification(){
+    if(this.showNotification){
+      this.showNotification = false;
+    }
+    else {
+      this.showNotification = true;
+    }
+  }
 }
